@@ -1,67 +1,53 @@
-#
-# # anasyntaxis/adblock-filters
-# # https://github.com/anasyntaxis/adblock-filters/
-#
+! Title: anasyntaxis/adblock-filters
+! Description: A minimalist adblock list designed to remove non-essential elements from select websites, including Amazon, DuckDuckGo, GitHub, NPR's text-only site, 'Login with Google' prompts, Old Reddit, and Wikipedia, for a cleaner and less distracting browsing experience.
+! Homepage: https://github.com/anasyntaxis/adblock-filters/
+! Version: 2025.02.25
+! Last updated: 2025-02-25
+! License: 0BSD
+! Expires: 7d
 
-#
-# ## amazon.com
-#
-# Cleanups up distracting elements.
-#
-www.amazon.com###nav-hamburger-menu
-www.amazon.com###gw-card-layout
-www.amazon.com##[class*="shoveler"]
-www.amazon.com##[class*="maple-banner"]
-www.amazon.com##[class*="csm-placement-id-"]
-www.amazon.com##[class*="nav-flyout-sidePanel"]
-www.amazon.com##[id*="rufus"]
-www.amazon.com##[id*="herotator"]
-www.amazon.com##[id*="join-prime"]
-www.amazon.com##[href*="/live"]
-www.amazon.com##[href*="/finds"]
-www.amazon.com##[href*="Amazon-Video"]
-www.amazon.com##[href*="health.amazon.com"]
-www.amazon.com##[href*="pharmacy.amazon.com"]
+# amazon.com
+# Cleans up distracting elements
+amazon.com###nav-hamburger-menu
+amazon.com###gw-card-layout
+amazon.com##[class*="shoveler"]
+amazon.com##[class*="maple-banner"]
+amazon.com##[class*="csm-placement-id-"]
+amazon.com##[class*="nav-flyout-sidePanel"]
+amazon.com##[id*="rufus"]
+amazon.com##[id*="herotator"]
+amazon.com##[id*="join-prime"]
+amazon.com##[href*="/live"]
+amazon.com##[href*="/finds"]
+amazon.com##[href*="Amazon-Video"]
+amazon.com##[href*="health.amazon.com"]
+amazon.com##[href*="pharmacy.amazon.com"]
 
-#
-# ## duckduckgo.com
-#
-# Cleanups up distracting elements.
-#
+# duckduckgo.com
+# Cleans up distracting elements
 duckduckgo.com##[class*="react-feedback"]
 
-#
-# ## github.com
-#
-# Copilot Removal
-#
+# github.com
+# Removes GitHub Copilot suggestions
 github.com##[class*="copilot"]
 
-#
-# ## text.npr.org
-#
+# text.npr.org
+# Removes header
 text.npr.org##header
 
-
-#
-# ## google.com
-#
+# google.com
 # Disables 'Login with Google' annoyance
-#
-||accounts.google.com/gsi/*$xhr,script,3p 
+||accounts.google.com/gsi/*$xhr,script,3p
 
-#
-# ## reddit.com
-#
-www.reddit.com###redesign-beta-optin-btn
+# reddit.com
+# Removes old Reddit beta banner
+reddit.com###redesign-beta-optin-btn
 
-
-#
-# ## wikipedia.org
-#
+# wikipedia.org
+# Removes fundraising notices and other nags
 wikipedia.org##.cn-fundraising
 wikipedia.org##.nag-trigger
 wikipedia.org###centralNotice
-wikipedia.org##[id$=“banner-nag”]
+wikipedia.org##[id$="banner-nag"]
 
-### END
+# END
