@@ -1,5 +1,5 @@
 # adblock-filters
-A minimalistic adblock list tailored to block non-essential elements on select websites, including Amazon, DuckDuckGo, GitHub, NPR, Google, Reddit, and Wikipedia, for a cleaner and more focused browsing experience.
+A minimalist adblock list designed to remove non-essential elements from select websites, including Amazon, DuckDuckGo, GitHub, NPR's text-only site, 'Login with Google' prompts, Old Reddit, and Wikipedia, for a cleaner and less distracting browsing experience. 
 
 ## Sites
 - **amazon.com** - Minmalist experience.
