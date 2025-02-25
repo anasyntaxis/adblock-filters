@@ -9,3 +9,10 @@ A minimalistic adblock list tailored to block non-essential elements on select w
 - **google.com** - Blocks "Login with Google" on 3rd party sites.
 - **reddit.com** - Block message pushing user to new reddit when old reddit style is active.
 - **en.wikipedia.org** - Block fundraiding begs.
+
+## Installation
+Import and subscribe via your favorite adblocker:
+```
+https://raw.githubusercontent.com/anasyntaxis/adblock-filters/refs/heads/main/filters.txt
+```
+
