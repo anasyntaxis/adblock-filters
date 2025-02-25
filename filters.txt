@@ -59,6 +59,9 @@ www.reddit.com###redesign-beta-optin-btn
 #
 # ## wikipedia.org
 #
-en.wikipedia.org##.cn-fundraising
+wikipedia.org##.cn-fundraising
+wikipedia.org##.nag-trigger
+wikipedia.org###centralNotice
+wikipedia.org##[id$=“banner-nag”]
 
 ### END
