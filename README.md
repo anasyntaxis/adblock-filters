@@ -3,6 +3,7 @@ A minimalist adblock list designed to remove non-essential elements from select 
 
 ## Sites
 - **amazon.com** - Minmalist experience.
+- **arstechnica.com** - Remove unrelated in-article videos.
 - **duckduckgo.com** - Less junk.
 - **github.com** - Bye Copilot.
 - **text.npr.org** - Removes useless header.
