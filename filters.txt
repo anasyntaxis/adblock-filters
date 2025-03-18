@@ -23,6 +23,10 @@ amazon.com##[href*="Amazon-Video"]
 amazon.com##[href*="health.amazon.com"]
 amazon.com##[href*="pharmacy.amazon.com"]
 
+# arstechnica.com
+# Removes video polluting articles.
+arstechnica.com##.cne-interlude-container
+
 # duckduckgo.com
 # Cleans up distracting elements
 duckduckgo.com##[class*="react-feedback"]
