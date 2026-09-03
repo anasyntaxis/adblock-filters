@@ -1,13 +1,13 @@
 ! Title: anasyntaxis/adblock-filters
 ! Description: A minimalist adblock list designed to remove non-essential elements from select websites, including Amazon, DuckDuckGo, GitHub, NPR's text-only site, 'Login with Google' prompts, Old Reddit, and Wikipedia, for a cleaner and less distracting browsing experience.
 ! Homepage: https://github.com/anasyntaxis/adblock-filters/
-! Version: 2025.02.25
-! Last updated: 2025-02-25
+! Version: 2026.09.03
+! Last updated: 2026-09-03
 ! License: 0BSD
-! Expires: 7d
+! Expires: 30d
 
-# amazon.com
-# Cleans up distracting elements
+! amazon.com
+! Cleans up distracting elements
 amazon.com###nav-hamburger-menu
 amazon.com###gw-card-layout
 amazon.com##[class*="shoveler"]
@@ -23,35 +23,43 @@ amazon.com##[href*="Amazon-Video"]
 amazon.com##[href*="health.amazon.com"]
 amazon.com##[href*="pharmacy.amazon.com"]
 
-# arstechnica.com
-# Removes video polluting articles.
+! arstechnica.com
+! Removes video polluting articles.
 arstechnica.com##.cne-interlude-container
 
-# duckduckgo.com
-# Cleans up distracting elements
+! duckduckgo.com
+! Cleans up distracting elements
 duckduckgo.com##[class*="react-feedback"]
 
-# github.com
-# Removes GitHub Copilot suggestions
+! github.com
+! Removes GitHub Copilot suggestions
 github.com##[class*="copilot"]
 
-# text.npr.org
-# Removes header
+! text.npr.org
+! Removes header
 text.npr.org##header
 
-# google.com
-# Disables 'Login with Google' annoyance
+! google.com
+! Disables 'Login with Google' annoyance
 ||accounts.google.com/gsi/*$xhr,script,3p
 
-# reddit.com
-# Removes old Reddit beta banner
+! reddit.com
+! Removes old Reddit beta banner
 reddit.com###redesign-beta-optin-btn
 
-# wikipedia.org
-# Removes fundraising notices and other nags
+! walmart.com
+! Eliminate the idiotic AI button, heavily trim front page.
+www.walmart.com##.unified-chat-component.sparky-fab-wrapper
+www.walmart.com##.mt3.mt4-xl.aspect-ratio--strech-grid-hero
+www.walmart.com##.b--near-white.bb.pb3.mv3
+www.walmart.com##.ld_BP.ld_CC.ld_BD .ld_Dd.ld_Dc
+www.walmart.com##.video-carousel-container
+
+! wikipedia.org
+! Removes fundraising notices and other nags
 wikipedia.org##.cn-fundraising
 wikipedia.org##.nag-trigger
 wikipedia.org###centralNotice
 wikipedia.org##[id$="banner-nag"]
 
-# END
+! END
