@@ -43,6 +43,10 @@ text.npr.org##header
 ! Disables 'Login with Google' annoyance
 ||accounts.google.com/gsi/*$xhr,script,3p
 
+! tumblr.com
+! Removes premium subscribe header.
+www.tumblr.com##[href="https://www.tumblr.com/premium"]
+
 ! reddit.com
 ! Removes old Reddit beta banner
 reddit.com###redesign-beta-optin-btn
