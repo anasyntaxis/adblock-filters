@@ -1,69 +1,89 @@
 ! Title: anasyntaxis/adblock-filters
-! Description: A minimalist adblock list designed to remove non-essential elements from select websites, including Amazon, DuckDuckGo, GitHub, NPR's text-only site, 'Login with Google' prompts, Old Reddit, and Wikipedia, for a cleaner and less distracting browsing experience.
+! Description: A minimalist adblock list that removes non-essential elements from select websites, including Amazon, Ars Technica, DuckDuckGo, GitHub, Google, NPR's text-only site, Old Reddit, Tumblr, Walmart, and Wikipedia, for a cleaner and less distracting browsing experience.
 ! Homepage: https://github.com/anasyntaxis/adblock-filters/
 ! Version: 2026.09.03
-! Last updated: 2026-09-03
+! Last modified: 2026-09-03
 ! License: 0BSD
-! Expires: 30d
+! Expires: 30 days
 
+! ---------------------------------------------------------------------
 ! amazon.com
-! Cleans up distracting elements
-amazon.com###nav-hamburger-menu
+! Removes distracting elements.
+! ---------------------------------------------------------------------
 amazon.com###gw-card-layout
-amazon.com##[class*="shoveler"]
-amazon.com##[class*="maple-banner"]
+amazon.com###nav-hamburger-menu
 amazon.com##[class*="csm-placement-id-"]
+amazon.com##[class*="maple-banner"]
 amazon.com##[class*="nav-flyout-sidePanel"]
-amazon.com##[id*="rufus"]
-amazon.com##[id*="herotator"]
-amazon.com##[id*="join-prime"]
-amazon.com##[href*="/live"]
+amazon.com##[class*="shoveler"]
 amazon.com##[href*="/finds"]
+amazon.com##[href*="/live"]
 amazon.com##[href*="Amazon-Video"]
 amazon.com##[href*="health.amazon.com"]
 amazon.com##[href*="pharmacy.amazon.com"]
+amazon.com##[id*="herotator"]
+amazon.com##[id*="join-prime"]
+amazon.com##[id*="rufus"]
 
+! ---------------------------------------------------------------------
 ! arstechnica.com
-! Removes video polluting articles.
+! Removes videos embedded in articles.
+! ---------------------------------------------------------------------
 arstechnica.com##.cne-interlude-container
 
+! ---------------------------------------------------------------------
 ! duckduckgo.com
-! Cleans up distracting elements
+! Removes distracting elements.
+! ---------------------------------------------------------------------
 duckduckgo.com##[class*="react-feedback"]
 
+! ---------------------------------------------------------------------
 ! github.com
-! Removes GitHub Copilot suggestions
+! Removes GitHub Copilot suggestions.
+! ---------------------------------------------------------------------
 github.com##[class*="copilot"]
 
-! text.npr.org
-! Removes header
-text.npr.org##header
-
+! ---------------------------------------------------------------------
 ! google.com
-! Disables 'Login with Google' annoyance
+! Disables the "Login with Google" prompt.
+! ---------------------------------------------------------------------
 ||accounts.google.com/gsi/*$xhr,script,3p
 
-! tumblr.com
-! Removes premium subscribe header.
-www.tumblr.com##[href="https://www.tumblr.com/premium"]
-
+! ---------------------------------------------------------------------
 ! reddit.com
-! Removes old Reddit beta banner
+! Removes the Old Reddit beta banner.
+! ---------------------------------------------------------------------
 reddit.com###redesign-beta-optin-btn
 
+! ---------------------------------------------------------------------
+! text.npr.org
+! Removes the header.
+! ---------------------------------------------------------------------
+text.npr.org##header
+
+! ---------------------------------------------------------------------
+! tumblr.com
+! Removes the premium subscribe header.
+! ---------------------------------------------------------------------
+www.tumblr.com##[href="https://www.tumblr.com/premium"]
+
+! ---------------------------------------------------------------------
 ! walmart.com
-! Eliminate the idiotic AI button, heavily trim front page.
-www.walmart.com##.unified-chat-component.sparky-fab-wrapper
-www.walmart.com##.mt3.mt4-xl.aspect-ratio--strech-grid-hero
+! Removes the AI chat button and trims the front page.
+! ---------------------------------------------------------------------
 www.walmart.com##.b--near-white.bb.pb3.mv3
 www.walmart.com##.ld_BP.ld_CC.ld_BD .ld_Dd.ld_Dc
+www.walmart.com##.mt3.mt4-xl.aspect-ratio--strech-grid-hero
+www.walmart.com##.unified-chat-component.sparky-fab-wrapper
 www.walmart.com##.video-carousel-container
 
+! ---------------------------------------------------------------------
 ! wikipedia.org
-! Removes fundraising notices and other nags
+! Removes fundraising notices and other nags.
+! ---------------------------------------------------------------------
+wikipedia.org###centralNotice
 wikipedia.org##.cn-fundraising
 wikipedia.org##.nag-trigger
-wikipedia.org###centralNotice
 wikipedia.org##[id$="banner-nag"]
 
 ! END
